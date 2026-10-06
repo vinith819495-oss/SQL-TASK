@@ -1,0 +1,16 @@
+CREATE TABLE College (
+    College_id INT NOT NULL UNIQUE,
+    College_Name VARCHAR(100) NOT NULL,
+    Std_RollNo INT NOT NULL,
+    Std_Name VARCHAR(100) NOT NULL
+);
+
+INSERT INTO College (College_id, College_Name, Std_RollNo, Std_Name)
+VALUES
+(101, 'ABC College', 1001, 'Arun'),
+(102, 'XYZ College', 1002, 'Bala'),
+(103, 'Government College', 1003, 'Kumar'),
+(104, 'National College', 1004, 'Ravi'),
+(105, 'City College', 1005, 'Vijay');
+
+SELECT * FROM College;
